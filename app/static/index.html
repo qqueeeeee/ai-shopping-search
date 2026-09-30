@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shopping Agent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>History</h2>
+            </div>
+            <div class="history-list" id="history-list">
+                <!-- History items here -->
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <h1>🛍️ AI Shopping Agent</h1>
+                <p class="subtitle">Your intelligent personal shopper.</p>
+            </header>
+            
+            <div class="search-section">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="What are you looking for today?">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="example-queries">
+                    <span>Try:</span>
+                    <button class="chip">Best laptop for AI development under ₹70,000</button>
+                    <button class="chip">Best wireless headphones under ₹200</button>
+                    <button class="chip">Ergonomic office chair</button>
+                </div>
+            </div>
+
+            <div class="results-container" id="results-container" style="display: none;">
+                <div class="activity-panel" id="activity-panel">
+                    <h3>Activity Pipeline</h3>
+                    <ul class="activity-list" id="activity-list">
+                        <!-- Activity steps here -->
+                    </ul>
+                </div>
+                
+                <div class="recommendation-panel" id="recommendation-panel" style="display: none;">
+                    <h3>💡 Recommendation</h3>
+                    <p id="recommendation-text"></p>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <!-- Product cards here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

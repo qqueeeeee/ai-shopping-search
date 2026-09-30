@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+httpx
+beautifulsoup4
+python-dotenv
+groq
+google-genai
+duckduckgo-search
+scikit-learn
